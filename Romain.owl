@@ -1,0 +1,2496 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/tlouge/ontologies/2018/11/ROMAIN"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/tlouge/ontologies/2018/11/ROMAIN">
+    <Prefix name="" IRI="http://www.semanticweb.org/tlouge/ontologies/2018/11/ROMAIN"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/ro/releases/2018-05-11/ro.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
+    <Import>http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hedi Karray, Farhad Ameri, Melinda Hodkiewicz, Thierry Louge</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROMAIN:Reference Ontology for Industrial Maintenance</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#maintenance_task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance_Cost_per_Utilised_Hour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:RO_0002310"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alarm_detected_by_Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapabilityDegradation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_maintenance_planning_activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_hours_per_day"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000148"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Follow-up_frm_Cond.Based_WO/Follow-up_frm_Cond.Based_WO/event_triggered_by_PdM_Activity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#proceeds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DescriptiveInformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_cumulative_hours"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_location_code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Prognostic-RUL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_planned_cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cost_measurement_info"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#&apos;ROM:_maintenance_work_specification&apos;"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenance_notification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Root_cause_analysis_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintanableItemRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#failure_finding_maintenance_strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000310"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Operator_Call"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#intervalTriggeringEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#triggeringEventDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dependsOn"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Operator_Casual_Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Effective_Utilisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_used_hours"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenanceWorkOrderSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Degraded_and_in_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LossFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_start_date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secondary_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Operator_Inspection_Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Follow-up_frm_Prev.Mtc._WO/PM_Activity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenanceScheduleList"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occurs_on"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#try"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Failed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#IMAMO_0000000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Availability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work_order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#On_condition_maintenance_strategy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#precededBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#degradation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#modification_maintenance_strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#code_identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatOnt_000000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_maintenance_time_interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenanceAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#happensTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#run-to-failure_maintenance_strategy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measuredAs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DesignativeInformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LMU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Degradation_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_maintenance_work_order_record"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#requirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntermittentFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_tirggered_by_Fixed_Interval_Preventative_Maintenance_Task_execution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#concretizes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operating_Efficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MTBF"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000038"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_maintenance_plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintainability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenancePlanSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatOnt_000000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MTTR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Maintenance_Casual_Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#&apos;maintenance_work_notification&apos;"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatOnt_000000011"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#assetRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nonconformity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utilisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#degradQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_system_status_code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Effective_Use_of_Availability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affects"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance_life_plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scheduled_restoration_maintenance_strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IrregularFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Condition_monitoring_Task_execution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#standardWorkProcedureSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#time_measurement_info"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MatOnt_000000025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatOnt_000000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#&apos;maintenance_strategy&apos;"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Use_of_Availability"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTrouble"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenance_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#year_identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#&apos;maintenance_strategy_development&apos;"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scheduled_repair_maintenance_strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_order_type_code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_actual_cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software_agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prescribes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MatOnt_000000026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Follow-up_from_prior_WO"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#non-conformityTriggeringEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Failure_finding_task_execution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DegradedFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#work_management_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#failureEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#component"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resolvedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Maintainer_Inspection_Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance_history"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Alarm_detected_by_Operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#componentRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Asset_modification_task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubsequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsWith"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000033"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event_triggered_by_Inspection_Route_by_Operator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#precedes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MTBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_process_of_failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#date_identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Overall_Equipment_Effectiveness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#definition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#violates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROM:_order_number"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MatOnt_000000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reliability_analysis_process"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occupies"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000034"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Asset"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MatOnt_000000024"/>
+                <Class IRI="#assetRole"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Degradation_process"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasOutput"/>
+                <Class IRI="#nonconformity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#precedes"/>
+                <Class IRI="#Degraded_and_in_maintenance"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Failed"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+                <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#precededBy"/>
+                <Class IRI="#failureEvent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LMU"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MatOnt_000000024"/>
+                <Class IRI="#LMU"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LMU"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <Class IRI="#Item"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasPart"/>
+                    <Class IRI="#Item"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MatOnt_000000025"/>
+                <Class IRI="#maintainability"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000002"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000004"/>
+        <Class abbreviatedIRI="obo:BFO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000004"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MatOnt_000000025"/>
+            <Class abbreviatedIRI="obo:BFO_0000019"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000008"/>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+            <Class abbreviatedIRI="obo:BFO_0000040"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000016"/>
+        <Class abbreviatedIRI="obo:BFO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000017"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000019"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
+        <Class abbreviatedIRI="obo:BFO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+        <Class abbreviatedIRI="obo:BFO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000030"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000031"/>
+        <Class abbreviatedIRI="obo:BFO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000034"/>
+        <Class abbreviatedIRI="obo:BFO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000038"/>
+        <Class abbreviatedIRI="obo:BFO_0000008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+        <Class abbreviatedIRI="obo:BFO_0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000148"/>
+        <Class abbreviatedIRI="obo:BFO_0000008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+        <Class abbreviatedIRI="obo:BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000033"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000310"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Asset_modification_task"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_engineer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FunctionalRequirement"/>
+        <Class abbreviatedIRI="obo:BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#IMAMO_0000000015"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Prognostic-RUL"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator"/>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_engineer"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+        <Class IRI="#event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alarm_detected_by_Maintenance"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Analysis"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#LMU"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Availability"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapabilityDegradation"/>
+        <Class IRI="#degradation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Degradation_process"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DegradedFunction"/>
+        <Class IRI="#dysfunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Degraded_and_in_maintenance"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DescriptiveInformationContentEntity"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Effective_Use_of_Availability"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Effective_Utilisation"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Failed"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntermittentFunction"/>
+        <Class IRI="#dysfunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrregularFunction"/>
+        <Class IRI="#dysfunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Item"/>
+        <Class abbreviatedIRI="obo:BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LMU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MatOnt_000000026"/>
+            <Class IRI="#nonconformity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LMU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#maintenancePlanSpecification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LMU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#participatesIn"/>
+            <Class IRI="#maintenanceAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossFunction"/>
+        <Class IRI="#dysfunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MTBF"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MTBS"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MTTR"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_Cost_per_Utilised_Hour"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_history"/>
+        <Class IRI="#MatOnt_000000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_life_plan"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatOnt_000000011"/>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatOnt_000000012"/>
+        <Class IRI="#MatOnt_000000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatOnt_000000014"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatOnt_000000019"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#On_condition_maintenance_strategy"/>
+        <Class IRI="#&apos;maintenance_strategy&apos;"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operating_Efficiency"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Overall_Equipment_Effectiveness"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#MatOnt_000000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_boundary"/>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reliability_analysis_process"/>
+        <Class IRI="#Analysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Root_cause_analysis_process"/>
+        <Class IRI="#Analysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secondary_function"/>
+        <Class abbreviatedIRI="obo:BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software_agent"/>
+        <Class IRI="#MatOnt_000000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Use_of_Availability"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utilisation"/>
+        <Class IRI="#MatOnt_000000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Work_order"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#assetRole"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#code_identifier"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DesignativeInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#component"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#componentRole"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cost_measurement_info"/>
+        <Class IRI="#DescriptiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#date_identifier"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DesignativeInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#degradQuality"/>
+        <Class IRI="#degradation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#degradation"/>
+        <Class IRI="#nonconformity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dysfunction"/>
+        <Class IRI="#nonconformity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_tirggered_by_Fixed_Interval_Preventative_Maintenance_Task_execution"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Alarm_detected_by_Operator"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Condition_monitoring_Task_execution"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Failure_finding_task_execution"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Follow-up_from_prior_WO"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Inspection_Route_by_Operator"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Maintainer_Inspection_Route"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Maintenance_Casual_Observation"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Operator_Call"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Operator_Casual_Observation"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event_triggered_by_Operator_Inspection_Route"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#failureEvent"/>
+        <Class IRI="#event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#failure_finding_maintenance_strategy"/>
+        <Class IRI="#&apos;maintenance_strategy&apos;"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intervalTriggeringEvent"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intervalTriggeringEvent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDefinedBy"/>
+            <Class IRI="#maintenanceScheduleList"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintainability"/>
+        <Class abbreviatedIRI="obo:BFO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintanableItemRole"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenanceAction"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenancePlanSpecification"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenanceScheduleList"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenanceWorkOrderSpecification"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenanceWorkOrderSpecification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#concretizes"/>
+            <Class IRI="#maintenanceAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_data"/>
+        <Class abbreviatedIRI="obo:IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_notification"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_notification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#triggeringEventDescription"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_notification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAbout"/>
+            <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_notification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#produces"/>
+            <Class IRI="#maintenanceWorkOrderSpecification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_task"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#modification_maintenance_strategy"/>
+        <Class IRI="#&apos;maintenance_strategy&apos;"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#non-conformityTriggeringEvent"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nonconformity"/>
+        <Class abbreviatedIRI="obo:BFO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nonconformity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#violates"/>
+            <Class IRI="#requirement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#requirement"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#run-to-failure_maintenance_strategy"/>
+        <Class IRI="#&apos;maintenance_strategy&apos;"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scheduled_repair_maintenance_strategy"/>
+        <Class IRI="#&apos;maintenance_strategy&apos;"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scheduled_restoration_maintenance_strategy"/>
+        <Class IRI="#&apos;maintenance_strategy&apos;"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#standardWorkProcedureSpecification"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#standardWorkProcedureSpecification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#describes"/>
+            <Class IRI="#maintenanceAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#time_measurement_info"/>
+        <Class IRI="#DescriptiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#triggeringEventDescription"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#work_management_process"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#year_identifier"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DesignativeInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;ROM:_maintenance_work_specification&apos;"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;ROM:_maintenance_work_specification&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#concretizes"/>
+            <Class IRI="#maintenanceAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;maintenance_strategy&apos;"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;maintenance_strategy_development&apos;"/>
+        <Class IRI="#work_management_process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;maintenance_strategy_development&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOutput"/>
+            <Class IRI="#&apos;maintenance_strategy&apos;"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;maintenance_work_notification&apos;"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;maintenance_work_notification&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#triggeringEventDescription"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;maintenance_work_notification&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAbout"/>
+            <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;maintenance_work_notification&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#produces"/>
+            <Class IRI="#maintenanceWorkOrderSpecification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Follow-up_frm_Cond.Based_WO/Follow-up_frm_Cond.Based_WO/event_triggered_by_PdM_Activity"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Follow-up_frm_Prev.Mtc._WO/PM_Activity"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_actual_cost"/>
+        <Class IRI="#cost_measurement_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_cumulative_hours"/>
+        <Class IRI="#time_measurement_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_description"/>
+        <Class IRI="#DescriptiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_hours_per_day"/>
+        <Class IRI="#time_measurement_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_location_code"/>
+        <Class IRI="#code_identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_maintenance_plan"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_maintenance_planning_activity"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_maintenance_time_interval"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_maintenance_work_order_record"/>
+        <Class IRI="#DescriptiveInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_order_number"/>
+        <Class IRI="#code_identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_order_type_code"/>
+        <Class IRI="#code_identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_planned_cost"/>
+        <Class IRI="#cost_measurement_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_process_of_failure"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_start_date"/>
+        <Class IRI="#date_identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_system_status_code"/>
+        <Class IRI="#code_identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_used_hours"/>
+        <Class IRI="#time_measurement_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROM:_year"/>
+        <Class IRI="#year_identifier"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#concretizes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#happensTo"/>
+        <ObjectProperty IRI="#hasTrouble"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#precededBy"/>
+        <ObjectProperty IRI="#precedes"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MatOnt_000000024"/>
+        <Class abbreviatedIRI="obo:BFO_0000004"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affects"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#endsWith"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPart"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAbout"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occupies"/>
+        <Class abbreviatedIRI="obo:RO_0002310"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occupies"/>
+        <Class IRI="#event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occurs_on"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#prescribes"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#proceeds"/>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#violates"/>
+        <Class abbreviatedIRI="obo:BFO_0000002"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MatOnt_000000024"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affects"/>
+        <Class abbreviatedIRI="obo:BFO_0000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPart"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class abbreviatedIRI="obo:BFO_0000031"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAbout"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occupies"/>
+        <Class abbreviatedIRI="obo:BFO_0000008"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occurs_on"/>
+        <Class abbreviatedIRI="obo:BFO_0000008"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#prescribes"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#proceeds"/>
+        <Class abbreviatedIRI="obo:BFO_0000003"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resolvedBy"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#violates"/>
+        <Class abbreviatedIRI="obo:IAO_0000033"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000001</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000002</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000003</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">occurent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000004</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">independent continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000008</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">temporal region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000015</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000016</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000017</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">realizible entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000019</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000020</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">specifically dependent continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000023</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000030</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000031</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">generically dependent continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000034</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000038</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">one-dimensional temporal region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000040</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">material entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:BFO_0000148</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">zero-dimensional temporal region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000027</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">data item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">information content entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">directive information entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>obo:IAO_0000310</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A collection of information content entities intended to be understood together as a whole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000310</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:RO_0000057</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasParticipant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Asset_modification_task</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">asset modification task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FinancialIndicator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">financial indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FunctionalRequirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The function(s) which constitute the main reason(s) why a physical asset or system is acquired by its owner or user.
+SAE JA 1011</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#FunctionalRequirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">primary function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#IMAMO_0000000015</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cost of overtime maintenance indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#ImporovementRequest</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by maintenance strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is A Process in which some Independent Continuant endures and one or more of the dependent entities it bears does not change in kind or intensity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#MatOnt_000000002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">state</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#Prognostic-RUL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggred by prognostic RUL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#indicator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An indicator is a calculated value intended to measure a process or the output of a process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_engineer</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by engineer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_maintainer</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by maintainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggered_by_operator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by operator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BFO:process resulting in an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/karray/ontologies/2016/0/IMAMO#triggering_event</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: triggering event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Alarm_detected_by_Maintenance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by alarm detected by maintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Analysis</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">analysis process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#Asset</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A CCO:artifact that bears an ROM:Asset Role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Asset</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISO 55000:2014; 3.2.1 
+Asset: an item, thing or entity that has potential or actual value to an organization (3.1.14)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Asset</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: asset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Availability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Availability is a measure of the time that an asset is available to perform its intended function over a defined period. Availability measures the impact that scheduled and unscheduled maintenance has on the plant performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Availability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">availability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CapabilityDegradation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">capability degradation non conformity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#Degradation_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BFO:process that results in the loss of a desired quality or function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Degradation_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: process of degradation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DegradedFunction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">degraded function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#Degraded_and_in_maintenance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A state during which a CCO:artifact bears an undesirable quality, function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Degraded_and_in_maintenance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: state of degradation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Effective_Use_of_Availability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Effective Use of Availability is a measure of how much of the Available time is effectively utilised. Ratio of Operating Time to Available Time reported as a percentage (%).  It can also be derived by multiplying Operating Efficiency and Use of Availability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Effective_Use_of_Availability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">effective use of availability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Effective_Utilisation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Effective Utilisation is a measure of the time an asset is operating productively albeit not necessarily at full rate. This is a key operational measure that highlights the impacts of all time-based losses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Effective_Utilisation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">effective utilisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#Failed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A state during which a CCO:artifact is unable to perform its BFO:function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Failed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: state of failure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IntermittentFunction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">intermittent function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IrregularFunction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">irregular function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Item</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any part, component, device, subsystem, functional unit, equipment or system that can be individually considered.
+AS IEC 603003.14 2005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Item</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#LMU</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A CCO:artifact when it bears the ROM:Maintainable Item Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#LMU</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Maintainable item constitutes a part or an assembly of parts that is normally the lowest level in the equipment hierarchy during maintenance.
+ISO 14224:2006
+Also known as LMU least maintainable unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LMU</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintainable item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LossFunction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">loss of function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#MTBF</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mean Time Between Failure (MTBF) represents the average time in utilized hours between breakdowns. Ratio of Utilised Time to the Number of Breakdowns as based on the count of Unscheduled Loss Failures (ULF) events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MTBF</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mean time between failure (MTBF)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#MTBS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mean Time Between Stoppages (MTBS) is used to quantify the reliability in operation of equipment. MTBS represents the average time in utilized hours between stoppages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MTBS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mean time between stoppages (MTBS)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#MTTR</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mean Time To Repair (MTTR) is used to quantify the time taken to maintain an asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MTTR</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mean time to repair (MTTR)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Maintenance_Cost_per_Utilised_Hour</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Maintenance Cost per Utilised Hour is a measure of the maintenance cost required to deliver one utilized hour of asset operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Maintenance_Cost_per_Utilised_Hour</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maintenance cost per utilised hour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Maintenance_history</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Maintenance history is a set of maintenance records</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Maintenance_history</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maintenance history</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Maintenance_life_plan</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A maintenance life plan is the collated information, strategy and procedures for the optimum maintenance of an asset, or group of assets, over its life (reference International Infrastructure Management Manual v3.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Maintenance_life_plan</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance life plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MatOnt_000000011</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">data set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#MatOnt_000000012</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MatOnt_000000012</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">time sampled measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MatOnt_000000014</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">asset performance indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#MatOnt_000000019</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An Independent Continuant that is capable of performing Intentional Acts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MatOnt_000000019</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MatOnt_000000024</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MatOnt_000000025</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MatOnt_000000026</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">bearerOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#On_condition_maintenance_strategy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">on condition maintenance strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Operating_Efficiency</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The percentage of time the plant was available with an operator and was performing its primary function. Ratio of Operating Time to Utilised Time reported as a percentage (%).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Operating_Efficiency</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">operating efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Overall_Equipment_Effectiveness</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OEE is used to quantify the effective use of scheduled operating time for an asset. OEE is defined as the ratio of Valuable Operating Time to Scheduled Operating Time – expressed as a percentage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Overall_Equipment_Effectiveness</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">overall equipment effectiveness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Person</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An agent that is a human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_boundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">process boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Reliability_analysis_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the data-driven processes used to assess the reliability of an asset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Reliability_analysis_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">reliabillity analysis process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Root_cause_analysis_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Is a process of inquiry used for identifying the root causes of failure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Root_cause_analysis_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">root cause analysis process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Secondary_function</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Functions which a physical asset or system has to fulfil apart from its primary function(s), such as those needed to fulfil regulatory requirements and those which concern issues such as protection, control, containment, comfort, appearance, energy efficiency and structural integrity.
+SAE JA 1012</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Secondary_function</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">secondary function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Software_agent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A computer program that acts for a user or other program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Software_agent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">software agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Use_of_Availability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Use of Availability is a measure of how much of the Available time is utilised. It measures the ability of operating teams to use the asset when it is available.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Use_of_Availability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">use of availability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Utilisation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Utilisation is a measure of the time that the asset is utilized, albeit productively or non-productively (i.e. includes operating delays).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Utilisation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">utilisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Work_order</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A work order is a record. A work order is first an authorization of maintenance, repair or operations work to be completed. Work orders can be manually generated through a work request submitted by a staff member, client, tenant, or automatically generated through a work order management software or Preventive Maintenance (PM) schedule. It is also used to record the maintenance action taken and captures the costs and resources required and actually used in the execution of the maintenance task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Work_order</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance work order (MWO)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#affects</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If p is a process and c is a continuant, then p affects c if and only if p influences c in some manner, most often by producing a change in c.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#assetRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BFO:role that is borne by an CCO:artifact to deliver potential or actual value to an CCO:organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#assetRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: asset role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#code_identifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">code identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#component</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A CCO:artifact that bears a ROM:Component Role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#component</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#componentRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BFO:role that is borne by an CCO:artifact(s) when it becomes a part of another BFO:material entity, to provide a particular BFO:function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#componentRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: component role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cost_measurement_info</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cost measurement info</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#date_identifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">date identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#degradQuality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">quality degradation non conformity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#degradation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">degradation non conformity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#describes</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For all Types T1 and T2, if T1 describes T2 then there is some instance of T1, t1 that presents the characteristics by which some instance of T2, t2 can be recognized or visualized.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dysfunction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Functional failure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dysfunction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dysfunction non conformity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Instantaneous event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_tirggered_by_Fixed_Interval_Preventative_Maintenance_Task_execution</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by fixed interval preventive maintenance task execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Alarm_detected_by_Operator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by alarm detected by operator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Condition_monitoring_Task_execution</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by condition monitoring task execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Failure_finding_task_execution</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by failure finding task execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Follow-up_from_prior_WO</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by follow-up from prior WO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Inspection_Route_by_Operator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by inspection route by operator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Maintainer_Inspection_Route</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by maintainer inspection route</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Maintenance_Casual_Observation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by maintenance casual observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Operator_Call</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by operator call</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Operator_Casual_Observation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by operator casual observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_triggered_by_Operator_Inspection_Route</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by operator inspection route</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#failureEvent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BFO:process that precedes the ROM:State of Failure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#failureEvent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: failure event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#failure_finding_maintenance_strategy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">failure finding maintenance strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#hasSubject</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a relation between an occurrent and a dependent continuant in which the dependent continuant is the main subject to the appearance of the continuant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#intervalTriggeringEvent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">interval triggering event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#isA</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">entity A is a entity B means that A is subclass of B.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#maintainability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the ability of an item under given conditions of use, to be retained in, or restored to, a state in which  it  can  perform  a  required  function,  when  maintenance  is  performed  under  given conditions and using stated procedures and resources 
+AS IEC 60300.3.10—2004 (R2016)
+Dependability management 
+Part 3.10:  Application guide—Maintainability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintainability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maintainability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#maintanableItemRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BFO:role borne by a group of one or more CCO:artifact(s) as an output of a ROM:Maintenance Strategy Process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintanableItemRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintanable item role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#maintenanceAction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BFO:process to perform work on a CCO:artifact according to a ROM:Maintenance Work Order Specification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenanceAction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#maintenancePlanSpecification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An IOA:information content entity describing the ROM:Maintenance Strategy Type to manage a specific functional failure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenancePlanSpecification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance plan specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#maintenanceScheduleList</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An IOA:information content entity describing a list of ROM:Maintenance Work Order Specification to be executed in a
+defined BFO:one-dimensional temporal region (i.e. temporal interval).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenanceScheduleList</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance schedule list</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#maintenanceWorkOrderSpecification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An IAO:information content entity describing a desired ROM:Maintenance Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenanceWorkOrderSpecification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance work order specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#maintenance_data</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data characterising the maintenance action planned or done. This is captured on a work order.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenance_data</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maintenance record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#maintenance_notification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An IAO:information content entity describing a ROM:Non-conformity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenance_notification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance notification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#maintenance_task</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A task is an elementary maintenance action. One or more tasks are involved in retaining a maintainable item in or restoring it to a specific condition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenance_task</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#modification_maintenance_strategy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">modification maintenance strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#non-conformityTriggeringEvent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">non-conformity triggering event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#nonconformity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BFO:specifically dependent continuant that inheres in a material entity and deviates from a design specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#nonconformity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A deviation from the requirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nonconformity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: non conformity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#occurs_on</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An instance level relation which holds between some processual entity and some temporal region whenever the duration of the processual entity is contained by the temporal region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#occurs_on</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">occurs on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#prescribes</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For all types T1 and T2, if T1 prescribes T2, then there is some instance of T1, t1, that serves as a rule or guide to some instance of T2, t2 (if T2 is a type of BFO:occurrent) or that serves as a model for some instance of T2, t2 (if T2 is a type of BFO:continuant)..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#proceeds</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a relation between two occurents. Occurent x precedes occurent y if and only if the time point at which x ends is before or equivalent to the time point at which y starts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#requirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An IAO:information content entity that prescribes a need or expectation to be met</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#requirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Need or expectation that is stated, generally implied or obligatory
+ISO 55000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#requirement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: requirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#requires</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">processRequires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#run-to-failure_maintenance_strategy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">run-to-failure maintenance strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scheduled_repair_maintenance_strategy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scheduled repair maintenance strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scheduled_restoration_maintenance_strategy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">schedule restoration maintenance strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#standardWorkProcedureSpecification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An IAO:plan specification that describes the steps required for a specific ROM:Maintenance Action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#standardWorkProcedureSpecification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">standard work procedure specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#time_measurement_info</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">time measurement info</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#triggeringEventDescription</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">triggering event description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#violates</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a continuant and a directive ICE in which the continuant does not respect the directions expressed in the directive ICE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#work_management_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">work management process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#year_identifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">year identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#&apos;ROM:_maintenance_work_specification&apos;</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An IAO:information content entity describing a  ROM:Maintenance Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#&apos;ROM:_maintenance_work_specification&apos;</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance work specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#&apos;maintenance_strategy&apos;</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An IAO:information content entity resulting from ROM:maintenance strategy development process for a ROM:Maintainable Item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#&apos;maintenance_strategy&apos;</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the task type to deal with a specific functional failure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#&apos;maintenance_strategy&apos;</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#&apos;maintenance_strategy_development&apos;</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance strategy development process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#&apos;maintenance_work_notification&apos;</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance work notification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Follow-up_frm_Cond.Based_WO/Follow-up_frm_Cond.Based_WO/event_triggered_by_PdM_Activity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by follow-up from cond.based WO/PdM activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Follow-up_frm_Prev.Mtc._WO/PM_Activity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event triggered by follow-up from prev.Mtc WO/PdM Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_actual_cost</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: actual cost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_cumulative_hours</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: cumulative hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_description</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_hours_per_day</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: hours per day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_location_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: location code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_maintenance_plan</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_maintenance_planning_activity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance planning activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_maintenance_time_interval</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance time interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_maintenance_work_order_record</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: maintenance work order record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_order_number</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: order number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_order_type_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: order type code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_planned_cost</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: planned cost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_process_of_failure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: process of failure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_start_date</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: start date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_system_status_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: system status code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_used_hours</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: used hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ROM:_year</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ROM: year</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
