@@ -32,6 +32,9 @@
         <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DirectiveInformationContentEntity"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#OWLNamedIndividual_ROMAIN00000000ROMAIN"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#OWLClass_ROMAIN00000038ROMAIN"/>
     </Declaration>
     <Declaration>
@@ -134,16 +137,16 @@
         <Class IRI="#OWLClass_ROMAIN00000033ROMAIN"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_ROMAIN00000004ROMAIN"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_ROMAIN00000003ROMAIN"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_ROMAIN00000007ROMAIN"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_ROMAIN00000032ROMAIN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_ROMAIN00000004ROMAIN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_ROMAIN00000003ROMAIN"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_ROMAIN00000008ROMAIN"/>
@@ -316,7 +319,7 @@
     <SubClassOf>
         <Class IRI="#OWLClass_ROMAIN00000005ROMAIN"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#prescribes"/>
+            <ObjectProperty IRI="#OWLObjectProperty_ROMAIN00000023ROMAIN"/>
             <Class IRI="#OWLClass_ROMAIN00000006ROMAIN"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -623,6 +626,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <Class IRI="#OWLClass_ROMAIN00000017ROMAIN"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#OWLClass_ROMAIN00000005ROMAIN"/>
+        <NamedIndividual IRI="#OWLNamedIndividual_ROMAIN00000000ROMAIN"/>
+    </ClassAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#OWLClass_ROMAIN00000000ROMAIN</IRI>
@@ -929,6 +936,11 @@ and deviates from a design specification.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_ROMAIN00000041ROMAIN</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Schedule Restoration Maintenance Strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLNamedIndividual_ROMAIN00000000ROMAIN</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">strategy spec1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
