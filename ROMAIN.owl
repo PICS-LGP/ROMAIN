@@ -12,14 +12,14 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.ontologylibrary.mil/CommonCore/Mid/GeospatialOntology</Import>
+    <Import>http://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology</Import>
     <Import>http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl</Import>
-    <Import>http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology</Import>
+    <Import>http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology</Import>
     <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
     <Import>http://www.obofoundry.org/ro/ro.owl</Import>
-    <Import>http://www.ontologylibrary.mil/CommonCore/Mid/UnitsOfMeasureOntology</Import>
-    <Import>http://www.ontologylibrary.mil/CommonCore/Mid/TimeOntology</Import>
-    <Import>http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology</Import>
+    <Import>http://www.ontologyrepository.com/CommonCoreOntologies/Mid/UnitsOfMeasureOntology</Import>
+    <Import>http://www.ontologyrepository.com/CommonCoreOntologies/Mid/TimeOntology</Import>
+    <Import>http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">H. KARRAY, F. AMERI, M.Hodkiewicz , T.Louge</Literal>
